@@ -1,3 +1,6 @@
+
+
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
@@ -7,7 +10,7 @@ import java.util.Random;
  * @author klaus
  */
 public class FindMultiples {
-//hi
+
     /*
      *Find an index where a value in the array occurs for the second time
      * Returns -1 if no such index exists

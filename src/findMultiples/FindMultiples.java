@@ -1,26 +1,34 @@
 package findMultiples;
 
-// This java program i s designed to find duplicates and triplicates in an array of integers and to measure the time taken to find them
+// This java program is designed to find duplicates and triplicates
+// in an array of integers and to measure the time taken to find them
 
 
 //A dynamic array implementation
 import java.util.ArrayList;
+
+//Provides the utility methods like  "shuffle' for manipulating colletions
 import java.util.Collections;
 
 /**
  * @author klaus
  */
+
+
 public class FindMultiples {
 
     /*
      *Find an index where a value in the array occurs for the second time
      * Returns -1 if no such index exists
      */
+
+
+    //Purpose of this method to find  the first duplicate value in the list
     public static int findDuplicate(ArrayList<Integer> numbers) {
-        for (int i = 0; i < numbers.size(); i++)
+        for (int i = 0; i < numbers.size(); i++)  //Iterates through each element in the list
             for (int j = 0; j < i; j++)
-                if (numbers.get(i) == numbers.get(j))
-                    return i;
+                if (numbers.get(i) == numbers.get(j))  //Compares the current element with all previous elements
+                    return i; // Return i if an duplicate is found
         return -1;  // Failure case
     }
 
@@ -28,6 +36,9 @@ public class FindMultiples {
      * Find an index where a value in the array occurs for the third time
      * Returns -1 if no such index exists
      */
+
+
+
     public static int findTriplicate(ArrayList<Integer> numbers) {
         // TO DO
         return -1;  // Failure case

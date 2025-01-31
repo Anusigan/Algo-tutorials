@@ -38,16 +38,27 @@ public class FindMultiples {
      */
 
 
-
+    //Placeholder method to find the index  of the first triplicate value in the list, find the index of the third instance
     public static int findTriplicate(ArrayList<Integer> numbers) {
         // TO DO
+        for(int i = 0; i < numbers.size(); i++){
+            for(int j = 0; j <i; j++){
+                if(numbers.get(i) == numbers.get(j)){
+                    for(int k = j+1; k <i; k++){
+                    }
+                }
+                }
+
+        }
         return -1;  // Failure case
     }
 
+
+    //Generates a list of integers for testing.
     public static ArrayList<Integer> createInput(int size, int repeats, boolean shuffle) {
-        ArrayList<Integer> result = new ArrayList<>(size);
+        ArrayList<Integer> result = new ArrayList<>(size); //this will go around the list and find the exact value now
         for (int i = repeats; i < size; i++)
-            result.add(i);
+            result.add(i); //
         for (int i = 0; i < repeats; i++)
             result.add(0);
         if (shuffle)
